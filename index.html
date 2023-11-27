@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minens Shoe Factory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezQ1A0WauYHDdiH6j5Ax65pkFMVZXLRejH8X9HdujjbIbH9tiYQYbTQC5tkN2I0J" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Welcome to Computer World</h1>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Product List -->
+    <div class="product" id="product1">
+        <img src="images/Mabookpro13inch.png" alt="Product 1 Image" height="400" width="400">
+        <h2>Macbook Pro 2022</h2>
+        <p>Price: &#8358;800, 000</p>
+        <button onclick="addToCart('product1')">Add to Cart</button>
+        <button class="like-button" onclick="likeProduct('product1')">
+            <span class="heart"></span> Like
+        </button> 
+    </div>
+
+    <div class="product" id="product2">
+        <img src="images/HPPavillion15.png" alt="Product 2 Image" width="400" height="400">
+        <h2>HP Pavillion</h2>
+        <p>Price: &#8358;500, 000</p>
+        <button onclick="addToCart('product2')">Add to Cart</button>
+        <button class="like-button" onclick="likeProduct('product2')">
+            <span class="heart"></span> Like
+        </button>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart">
+        <div class="icon-container">
+        
+        <h2>Shopping Cart </h2>
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+        <ul id="cartList">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total Quantity: <span id="totalQuantity">0</span></p>
+        <p>Total Price: &#8358;<span id="totalPrice">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@computerworld.com</p>
+        <p>Phone: 08000000000</p>
+    </div>
+</footer>
+
+</body>
+</html>
